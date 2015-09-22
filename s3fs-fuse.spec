@@ -75,12 +75,6 @@ make install DESTDIR=%{buildroot}
 * Mon Aug 15 2011 Jorge A Gallegos <kad@blegh.net> - 1.58-5
 - Minor mod to get rid of macro in changelog
 
-* Thu May 31 2012 Corey Gilmore <git@cfgci.com> - 1.61-1
-- Initial build of 1.61. Disabled generation of useless debug package. Using spec from https://bugzilla.redhat.com/show_bug.cgi?id=725292
-
-* Mon Aug 15 2011 Jorge A Gallegos <kad@blegh.net> - 1.58-5
-- Minor mod to get rid of macro in changelog
-
 * Sun Jul 31 2011 Jorge A Gallegos <kad@blegh.net> - 1.58-4
 - Got rid of unnecessary buildroot cleaning
 
