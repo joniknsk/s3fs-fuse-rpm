@@ -42,7 +42,7 @@ rsync backup to s3.
 %configure
 
 make %{?_smp_mflags}
-sed -i 's/\r//' README
+sed -i 's/\r//' README.md
 
 %install
 
@@ -52,13 +52,14 @@ make install DESTDIR=%{buildroot}
 
 %{_bindir}/s3fs
 %{_mandir}/man1/s3fs.1*
-%doc AUTHORS README
+%doc AUTHORS README.md
 
 
 %changelog
 
 * Fri Mar 17 2017 Eugene Peregudov <joniknsk@gmail.com> - 1.80
 - Bump version to 1.80
+- Changed document filename
 
 * Tue Sep 22 2015 Eugene Peregudov <joniknsk@gmail.com> - 1.79-2
 - Refactored spec-file from https://github.com/juliogonzalez/s3fs-fuse-rpm
