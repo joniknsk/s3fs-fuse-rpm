@@ -1,6 +1,6 @@
 Name:           s3fs-fuse
-Version:        1.80
-Release:        2%{?dist}
+Version:        1.84
+Release:        0%{?dist}
 Summary:        FUSE-based file system backed by Amazon S3
 Group:          System Environment/Base
 
@@ -56,6 +56,8 @@ make install DESTDIR=%{buildroot}
 
 
 %changelog
+* Mon Aug 20 2018 Nico Kadel-Garcia <nkadel@gmail.com> - 1.84
+- Update to 1.84
 
 * Fri Mar 17 2017 Eugene Peregudov <joniknsk@gmail.com> - 1.80
 - Bump version to 1.80
