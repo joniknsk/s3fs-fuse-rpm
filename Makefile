@@ -13,8 +13,7 @@ RSYNCSAFEOPTS=$(RSYNCOPTS) --ignore-existing
 # "mock" configurations to build with, activate only as needed
 MOCKS+=epel-7-x86_64
 MOCKS+=fedora-28-x86_64
-# RHEL 6 does not have fuse-devel >= 2.04, so no longer supportable
-#MOCKS+=epel-6-x86_64
+MOCKS+=fedora-29-x86_64
 
 # Local yum compatible RPM repository
 REPOBASEDIR="`/bin/pwd | xargs dirname`/infobloxrepo"
