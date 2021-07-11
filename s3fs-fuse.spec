@@ -1,6 +1,6 @@
 Name:           s3fs-fuse
-Version:        1.80
-Release:        2%{?dist}
+Version:        1.84
+Release:        0%{?dist}
 Summary:        FUSE-based file system backed by Amazon S3
 Group:          System Environment/Base
 
@@ -13,9 +13,14 @@ Requires:       curl >= 7.0
 Requires:       libxml2 >= 2.6
 Requires:       openssl >= 0.9
 
-BuildRequires:  fuse-devel, curl-devel, libxml2-devel
-BuildRequires:  openssl-devel, mailcap
-BuildRequires:  automake, gcc-c++
+BuildRequires:  automake
+BuildRequires:  curl-devel >= 7.0
+BuildRequires:  fuse-devel >= 2.8.4
+BuildRequires:  gcc-c++
+BuildRequires:  libxml2-devel >= 2.6
+BuildRequires:  mailcap
+BuildRequires:  openssl-devel
+
 Conflicts:      fuse-s3fs
 Obsoletes:      s3fs
 
@@ -56,6 +61,9 @@ make install DESTDIR=%{buildroot}
 
 
 %changelog
+* Mon Aug 20 2018 Nico Kadel-Garcia <nkadel@gmail.com> - 1.84
+- Update to 1.84
+- Add version dependencies to -devel packages for BuildRequires
 
 * Fri Mar 17 2017 Eugene Peregudov <joniknsk@gmail.com> - 1.80
 - Bump version to 1.80
